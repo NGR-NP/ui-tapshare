@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="robots"
+      content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+    />
+    <link rel="canonical" href="https://tapshare.xyz" />
+
+    <meta name="theme-color" content="#3C486B" />
+    <link rel="shortcut icon" href="/tapshare.ico" type="image/x-icon" />
+
+    <meta name="application-name" content="TapShare" />
+    <meta name="apple-mobile-web-app-title" content="TapShare" />
+
+    <link rel="icon" type="image/webp" href="/tapShare-194x194.webp" />
+
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3c486b" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/tapShare-apple-touch-icon.webp"
+    />
+
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="mstile-150x150.webp" />
+
+    <meta
+      property="og:title"
+      content="TapShare - simple, secure, and fast file and code sharing platform"
+    />
+    <meta
+      property="og:description"
+      content="Sharing is made simple with tapShare! No login or registration is needed. Seamlessly share files, code snippets, and text using a unique 6-digit ID. Get tapShare today"
+    />
+    <meta property="og:url" content="https://tapshare.xyz" />
+    <meta property="og:site_name" content="TapShare" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image:alt"
+      content="Sharing made simple with tapShare!"
+    />
+    <meta property="og:image" content="https://tapshare.xyz/tapshare.png" />
+    <meta property="og:email" content="tapsharesite@gmail.com" />
+    <meta property="og:phone_number" content="+977-9816366094" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://tapshare.xyz" />
+    <meta
+      property="twitter:title"
+      content="TapShare - simple, secure, and fast file and code sharing platform"
+    />
+    <meta
+      property="twitter:description"
+      content="Sharing is made simple with tapShare! No login or registration is needed. Seamlessly share files, code snippets, and text using a unique 6-digit ID. Get tapShare today"
+    />
+    <meta name="twitter:image" content="https://tapshare.xyz/tapshare.png" />
+
+    <meta property="li:site" content="https://tapshare.xyz" />
+    <meta
+      property="li:title"
+      content="TapShare - simple, secure, and fast file and code sharing platform"
+    />
+    <meta
+      property="li:description"
+      content="Sharing is made simple with tapShare! No login or registration is needed. Seamlessly share files, code snippets, and text using a unique 6-digit ID. Get tapShare today"
+    />
+    <meta property="li:image" content="https://tapshare.xyz/tapshare.png" />
+    <meta
+      property="li:image:alt"
+      content="Sharing made simple with tapShare!"
+    />
+
+    <title>
+      TapShare - simple, secure, and fast file and code sharing platform
+    </title>
+    <meta
+      name="description"
+      content="Sharing is made simple with tapShare! No login or registration is needed. Seamlessly share files, code snippets, and text using a unique 6-digit ID. Get tapShare today"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: hsl(226 50% 10%);
+      }
+      .loadingSvg {
+        height: 100dvh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        justify-content: center;
+        z-index: 999999999;
+        background-color: hsl(226 50% 10%);
+      }
+      .cont {
+        height: 100dvh;
+        width: 100dvw;
+      }
+      .Loadingring {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 154px;
+        height: 154px;
+        background: transparent;
+        border: 3px solid hsl(226 30% 26%);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 150px;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: hsl(226 5% 90%);
+
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px hsl(226 5% 90%);
+        box-shadow:
+          0px 3px 5px -1px hsl(226 50% 10% / 0.1),
+          0px 6px 10px 0px hsl(226 50% 10% / 0.14),
+          0px 1px 18px 0px hsl(226 50% 10% / 0.12);
+        z-index: 9999999999;
+      }
+
+      .Loadingring:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 100%;
+        height: 100%;
+        border: 3px solid transparent;
+        border-top: 3px solid hsl(226 30% 26%);
+        border-right: 3px solid hsl(226 30% 26%);
+        border-radius: 50%;
+        animation: animateC 2s linear infinite;
+      }
+
+      .loadingAnimation {
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 50%;
+        width: 50%;
+        height: 4px;
+        background: transparent;
+        transform-origin: left;
+        animation: animateL 2s linear infinite;
+      }
+
+      .loadingAnimation:before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: hsl(226 100% 95%);
+
+        top: -12px;
+        right: -8px;
+        box-shadow:
+          0 0 0px #0000,
+          0 0 0px #0000,
+          0 1px 3px 0 rgb(0 0 0 / 0.1),
+          0 1px 2px -1px rgb(0 0 0 / 0.1);
+      }
+
+      @keyframes animateC {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes animateL {
+        0% {
+          transform: rotate(45deg);
+        }
+
+        100% {
+          transform: rotate(405deg);
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+      @media (prefers-color-scheme: light) {
+        .loadingSvg {
+          background-color: hsl(226 100% 95%);
+        }
+        .Loadingring {
+          border: 3px solid hsl(226 30% 50%);
+          text-shadow: 0 0 10px hsl(226 5% 10%);
+          color: hsl(226 5% 10%);
+
+          box-shadow:
+            0px 3px 5px -1px hsl(226 100% 95% / 0.1),
+            0px 6px 10px 0px hsl(226 100% 95% / 0.14),
+            0px 1px 18px 0px hsl(226 100% 95% / 0.12);
+        }
+        .Loadingring:before {
+          border-top: 3px solid hsl(226 30% 50%);
+          border-right: 3px solid hsl(226 30% 50%);
+        }
+        .loadingAnimation:before {
+          background-color: hsl(226, 22%, 41%);
+          box-shadow:
+            0 0 0px #0000,
+            0 0 0px #0000,
+            0 1px 3px 0 rgb(0 0 0 / 0.1),
+            0 1px 2px -1px rgb(0 0 0 / 0.1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading" class="loadingSvg">
+      <div class="cont">
+        <div class="Loadingring">
+          Loading
+          <div class="loadingAnimation"></div>
+        </div>
+      </div>
+    </div>
+    <div id="root"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loading = document.getElementById("loading");
+        loading.style.scale = "0.5";
+        loading.style.display = "none";
+      });
+    </script>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
