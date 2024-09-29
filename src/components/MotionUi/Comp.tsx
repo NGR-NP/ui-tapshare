@@ -1,15 +1,17 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+
+import { Button } from "@/components/ui/button";
 import {
-  DialogContent,
   DialogClose,
+  DialogContent,
   DialogDescription,
   DialogOverlay,
   DialogTitle,
   DialogTrigger,
-} from '@/components/ui/dialog';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { FormDescription, FormMessage } from '../ui/form';
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+
+import { FormDescription, FormMessage } from "../ui/form";
 
 const MotionDialogContent = motion.create(DialogContent);
 const MotionDialogOverlay = motion.create(DialogOverlay);
