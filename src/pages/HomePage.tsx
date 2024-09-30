@@ -53,6 +53,7 @@ function FileUpload() {
         numCircles={numCircles}
         mainCircleSize={mainCircleSize}
         circleGap={circleGap}
+        animate={false}
       />
     </div>
   );
